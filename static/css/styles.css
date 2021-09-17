@@ -1,0 +1,901 @@
+/* ----------------------------------------------HTML Tags-------------------------------------------------- */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sacramento', cursive;
+    font-family: 'Andika', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #212529;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color:#FFF;
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 2%;
+    padding-right: 4%;
+    font-size: 8rem;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 0.5%;
+    padding-right: 2.5%;   
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color:#FFF;
+    text-align: left;
+    padding-top: 0.5%;
+}
+
+h4 {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+    color:#FFF;
+    text-align: center;
+    padding: 4% 30% 1%;
+    line-height: 1.6rem;
+    margin-right: 2%;
+}
+
+
+/*Contact.html*/
+input {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 1rem;
+}
+/*Contact.html*/
+textarea {
+    width: 100%;
+    height: 6rem;
+    border-radius: 1rem;
+}
+
+input#submit {          /*Contact.html*/
+    padding: 0rem 0;
+    text-align: center;
+    color: white;
+    font-weight: bold   ;
+    background: linear-gradient(to right, #5fe7eb 0%, #5fe7eb 50%, #212529 50%, #212529 100%);
+    background-size: 250% 100%;
+    background-position: 90% 0;
+    transition: background-position 0.5s ease-in-out;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border-color: #045464;
+    border-width: 0.15rem;
+}
+
+input#submit:hover {        /*Contact.html*/
+    background-position:0 0;
+    color: #132434
+}
+
+input#member_email { /*Blog.html*/
+    border-radius: 1rem;
+    text-align: center;
+    letter-spacing: 0.08rem;
+
+}
+
+.revue-form-actions { /*Blog.html*/
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.revue-form-footer {
+    text-align: center;
+    margin-top: 1rem;
+    color: white;
+}
+
+input#member_submit { /*Blog.html*/
+    padding: 0rem 0;
+    text-align: center;
+    color: white;
+    font-weight: bold   ;
+    background: linear-gradient(to right, #5fe7eb 0%, #5fe7eb 50%, #212529 50%, #212529 100%);
+    background-size: 250% 100%;
+    background-position: 90% 0;
+    transition: background-position 0.5s ease-in-out;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border-color: #045464;
+    border-width: 0.15rem;
+    width: 100%;
+    letter-spacing: 0.3rem;
+}
+
+input#member_submit:hover {        /*Blog.html*/
+    background-position:0 0;
+    color: #132434
+}
+
+/* ---------------------------------------------------- Classes -----------------------------------------------*/
+
+/* ----------------------Index.html------------- */
+
+/*---- Container ----*/
+.container-fluid {
+    padding: 1.4% 7%;
+}
+
+/* ---- Navbar ---- */
+
+.navbar {
+    padding: 0 1.5rem;
+}
+
+.navbar-brand {
+    font-family: 'Andika', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color:#54d3d8 !important;
+}
+
+.navbar-brand:hover {
+    transform: rotateX(360deg);
+    transition: transform 0.85s ease-in-out;
+    transition-delay: 0.15s;
+}
+
+.nav-icon {
+    border-radius: 50%;
+}
+
+.navbar-nav {
+    font-family: 'Andika', sans-serif;
+    font-size: 1.3rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 .15rem;
+}
+
+.navbar-toggler {
+    border: 1px transparent;
+    transition-delay: 0.15s;
+}
+
+.nav-link:hover {
+    color:#54d3d8 !important;
+    transform: rotateZ(-15deg);
+    transition: transform 0.15s ease-in-out;
+    transition-delay: 0.20s;
+}
+
+/* ---- Lines ---- */
+hr {
+    border-style: dotted none none;
+    width:15%;
+    border-color:#3196a4;
+    border-width: 7px;
+    background-color: transparent;
+    margin: auto;
+}
+
+/* ---- Button ---- */
+.index-button {
+    margin-left: 43.7%;
+    margin-bottom: 2%;
+    background: linear-gradient(to right, #5fe7eb 0%, #5fe7eb 50%, #212529 50%, #212529 100%);
+    background-size: 250% 100%;
+    background-position: 90% 0;
+    transition: background-position 0.5s ease-in-out;
+    border-radius: 1rem;
+}
+
+.index-button:hover {
+    background-position:0 0;
+    color: #132434
+}
+
+/* ---- Footer ---- */
+
+.social-div {
+    margin-top: 2rem;
+    margin-left: 16.5rem;
+}
+
+.social-icon {
+    padding-left: 3.5rem;
+    font-size: 1.8rem;
+    color: #54d3d8;
+}
+
+.social-icon:hover {
+    transform:rotateX(360deg);
+    transition: transform 1.5s ease-in-out;
+}
+
+.copyright {
+    margin-left: 1.9rem;
+    font-size: 0.7rem;
+}
+
+/* ----------------------End Index.html------------- */
+
+/* -------------------Resume.html------------------------ */
+
+/* ----About Me---- */
+.about {
+    padding-left: 8rem;
+}
+
+.about-heading {
+    text-align: center;
+    padding-left: 2rem;
+    font-weight: bolder;
+    font-size: 2rem;
+    
+}
+
+.about-list {
+    color:white;
+    margin-bottom: 1rem;
+}
+
+.about-list-div {
+    padding-left: 10rem;
+}
+
+li.about-list > span:first-child {
+    display:flex;
+    width: 40px;
+    box-sizing: border-box;
+}
+
+li.about-list > span {
+    width: calc(100% - 40px);
+}
+
+/* -----Image----- */
+.image {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.myimage {
+    border-radius: 50%;
+    width: 15rem;
+    /* margin-left:3.8rem; */
+}
+
+.myimage-t {
+    display: none;
+}
+
+/* ----Skills---- */
+.progress-wrap {
+    padding: 2rem 9rem;
+}
+
+.progress-bar {
+    background: #045464;
+}
+
+.progress {
+    animation: progressBar 2s ease-in-out;
+    animation-fill-mode:both; 
+}
+
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+/* ----Experience---- */
+
+
+.card {
+    padding: 2rem 3rem;
+    background-color: #212529;
+    border:none;
+}
+
+
+.card-header, .card-footer {
+    color:white;
+    text-align: left;
+}
+
+.card-footer {
+    border-top: none;
+    border-bottom: 1rem;
+}
+
+.card-header {
+    border-top-width: 0.1rem;
+    border-bottom: none;
+    text-decoration: underline;
+}
+
+.card-title {
+    color:#54d3d8;
+}
+
+.card-body {
+    padding-bottom: 0;
+}
+
+p.card-text {
+    padding: 0 0;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+/* ---- Button ---- */
+
+.resume-button-div {
+    text-align: center;
+}
+
+.resume-button {
+    background: linear-gradient(to right, #5fe7eb 0%, #5fe7eb 50%, #212529 50%, #212529 100%);
+    background-size: 250% 100%;
+    background-position: 90% 0;
+    transition: background-position 0.5s ease-in-out;
+    border-radius: 1rem;
+    border-color: #045464;
+    border-width: 0.15rem;
+
+}
+
+.resume-button:hover {
+    background-position:0 0;
+    color: #132434
+}
+/* ----------------------End Resume.html--------------- */
+
+/* ---------------------- Projects.html--------------- */
+
+.pro-heading {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+    
+}
+div.card > img {
+    border-radius: 2%;
+    max-height: 14rem;
+    max-width: 100%;
+    padding-left: 1rem;
+}
+
+p.tags {
+    padding: 0;
+    text-align: left;
+}
+
+.proj-button {
+    background: linear-gradient(to right, #5fe7eb 0%, #5fe7eb 50%, #212529 50%, #212529 100%);
+    background-size: 250% 100%;
+    background-position: 90% 0;
+    transition: background-position 0.5s ease-in-out;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border-color: #045464;
+    border-width: 0.15rem;
+}
+
+.proj-button:hover {
+    background-position:0 0;
+    color: #132434
+}
+
+.pro-button {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+/* ---------------------- Projects.html--------------- */
+
+/* ---------------------- Contact.html--------------- */
+
+.contact-p {
+    padding: 0;
+}
+
+.contact-heading {
+    text-align: center;
+}
+
+.contact-form {
+    padding: 1rem 0;
+    text-align: left;
+}
+
+/* ---------------------- End Contact.html--------------- */
+
+/* ---------------------- Blog.html--------------- */
+
+h3.blog-head {
+    text-align: center;
+}
+
+.blog-post {
+    padding: 0;
+    text-align: left;
+}
+
+p.blog-desc {
+    padding: 0;
+}
+
+.blog-button {
+    background: linear-gradient(to right, #5fe7eb 0%, #5fe7eb 50%, #212529 50%, #212529 100%);
+    background-size: 250% 100%;
+    background-position: 90% 0;
+    transition: background-position 0.5s ease-in-out;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border-color: #045464;
+    border-width: 0.15rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.blog-button:hover {
+    background-position:0 0;
+    color: #132434
+}
+
+/* ---------------------- End Blog.html--------------- */
+
+
+/* -------------------------------------------------- IDs -------------------------------------------------- */
+
+/* -------------------------Resume.html------------- */
+#about-p {
+    padding: 2% 20% 0 5%;
+    text-align: left;
+    font-size: 0.9rem;
+}
+/* ----------------------End Resume.html--------------- */
+
+
+/* ---------------------- Blog.html------------------- */
+#blog-card {
+    padding: 1rem 0;
+}
+
+#blog-desc {
+    padding: 0rem;
+}
+/* ---------------------- End Blog.html--------------- */
+
+
+
+
+
+/* ----------------------------------- Media Query --------------------------------------------------------- */
+/* -------------------------------------- Mobile ---------------------------- */
+@media (max-width:750px) {
+    
+/* ----------------------Index.html--------------- */
+
+    /*---- heading ------*/
+    .intro-name {
+        padding-top: 10%;
+        padding-right: 2%;
+        font-size: 3.5rem;
+    }
+
+    /* -----navbar------ */
+    .navbar {
+        padding: 0.8rem 0.8rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-brand:hover {
+        transition: none 0.85s ease-in-out;
+    }
+
+    .nav-icon {
+        width: 12%;
+        height: 12%;
+    }
+
+    .navbar-nav {
+        font-family: 'Andika', sans-serif;
+        font-size: 1rem;
+    }
+
+    .nav-link:hover {
+        transform:translateX(10px);
+        transition: transform 0.15s ease-in-out;
+    }
+
+    /* -----paragraph----- */
+    p {
+        padding: 12% 12%;
+        line-height: 1.8rem;
+        margin-right: 1%;
+    }
+
+    /* -----button------ */
+    .index-button {
+        margin-left: 28%;
+        margin-bottom: 2%;
+    }
+
+    /* ---- Footer------ */
+
+    .social-div {
+        margin-top: 2rem;
+        margin-left: 0.7rem;
+        padding-right: 0rem;
+    }
+
+    .social-icon {
+        padding-left: 1.6rem;
+        font-size: 1.4rem;
+    }
+
+    .social-icon:hover {
+        transition: none 1.5s ease-in-out;
+    }
+
+    .copyright {
+        margin-left: 1rem;
+        font-size: 0.7rem;
+    }
+
+/* ----------------------End Index.html------------- */
+
+/* ----------------------Resume.html--------------- */
+    /* ----About Me---- */
+    .about {
+        padding-left: 3rem;
+    }
+
+    .about-heading {
+        text-align: left;
+        padding-left: 3rem;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        padding-top: 2rem;
+    }
+
+    .about-list {
+        color:white;
+        margin-bottom: 0.5rem;
+    }
+
+    .about-list-div {
+        padding-left: 3rem;
+    }
+
+    li.about-list > span:first-child {
+        display:flex;
+        width: 30px;
+        box-sizing: border-box;
+    }
+
+    li.about-list > span {
+        width: calc(100% - 30px);
+        font-size: 0.9rem;
+    }
+
+    #about-p {
+        font-size: 0.8rem;
+        padding-left: 0rem;
+    }
+
+    /* -----Image----- */
+    .image {
+        display: flex;
+        justify-content: left;
+    }
+
+    .myimage {
+        border-radius: 20%;
+        width: 100%;
+        max-height: 20rem;
+        margin-left: 0rem;
+    }
+
+    .myimage-t {
+        display: none;
+    }
+
+    /* ----Skills---- */
+    .progress-wrap {
+        padding: 0 2.45rem
+    }
+
+    .progress-bar {
+        background: #045464;
+    }
+
+    .progress {
+        animation: none;
+    }
+
+    /* ----Experience---- */
+
+    .card {
+        padding: 1rem 0 1rem 0.8rem;
+        background-color: #212529;
+        border:none;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .exp {
+        padding-left: 1.5rem;
+    }
+
+    /* ----Buttons---- */
+    .resume-button-div {
+        text-align: left;
+    }
+    
+    .resume-button {
+        font-size: 1rem;
+        margin-bottom: 3%;
+    }
+/* ----------------------End Resume.html--------------- */
+
+/* ----------------------Projects.html--------------- */
+.pro-heading {
+    text-align: left;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding-left: 2.5rem;
+    padding-top: 2rem;
+}
+
+
+}
+
+/* --------------------------------------- Tablet ------------------------------*/
+@media (min-width:750px) and (max-width:1200px) {
+    
+/* ----------------------Index.html--------------- */
+
+    /*---- heading ------*/
+    .intro-name {
+        padding-top: 6%;
+        padding-right: 1%;
+        font-size: 4.5rem;
+    }
+
+    /* -----navbar------ */
+    .navbar {
+        padding: 0.8rem 0.8rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+
+    .navbar-brand:hover {
+        transition: none 0.85s ease-in-out;
+    }
+
+    .nav-icon {
+        width: 12%;
+        height: 12%;
+    }
+
+    .navbar-nav {
+        font-family: 'Andika', sans-serif;
+        font-size: 1rem;
+    }
+
+    .nav-link:hover {
+        transform:translateX(10px);
+        transition: transform 0.15s ease-in-out;
+    }
+
+    /* -----paragraph----- */
+    p {
+        padding: 10% 12% 2%;
+        line-height: 2rem;
+        margin-right: 1%;
+    }
+
+    /* -----lines----- */
+    hr {
+        width:20%
+    }
+
+    /* -----button------ */
+    .index-button {
+        margin-left: 39%;
+        margin-bottom: 2%;
+    }
+
+    /* ---- Footer------ */    
+    .social-div {
+            margin-top: 2rem;
+            margin-left: 7.9rem;
+            padding-right: 0rem;
+    }
+    
+    .social-icon {
+            padding-left: 2rem;
+            font-size: 1.7rem;
+    }
+
+    .social-icon:hover {
+        transition: none 1.5s ease-in-out;
+    }
+    
+    .copyright {
+            margin-left: 1.5rem;
+            font-size: 0.7rem;
+    }
+
+/* ----------------------End Index.html--------------- */
+
+/* ----------------------Resume.html--------------- */
+    /* ----About Me---- */
+    .about {
+        padding-left: 5.2rem;
+    }
+
+    .about-heading {
+        text-align: left;
+        padding-left: 5.2rem;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        padding-top: 2rem;
+    }
+
+    .about-list {
+        color:white;
+        margin-bottom: 0.5rem;
+    }
+
+    .about-list-div {
+        padding-left: 5.2rem;
+    }
+
+    li.about-list > span:first-child {
+        display:flex;
+        width: 30px;
+        box-sizing: border-box;
+    }
+
+    li.about-list > span {
+        width: calc(80% - 30px);
+        font-size: 0.9rem;
+    }
+
+    #about-p {
+        font-size: 0.8rem;
+        padding-left: 0rem;
+    }
+
+    /* -----Image----- */
+    .image {
+        display: flex;
+        justify-content: left;
+    }
+
+    .myimage {
+        display: none;
+    }
+    .myimage-t {
+        display:block;
+        float: right;
+        border-radius: 30%;
+        width: 26%;
+        max-height: 20rem;
+        margin-left: 0rem;
+        margin-right: 5rem;
+    }
+
+    /* ----Skills---- */
+    .progress-wrap {
+        padding: 0 2.5rem 0 4.5rem
+    }
+
+    .progress-bar {
+        background: #045464;
+    }
+
+    .progress {
+        animation: none;
+    }
+
+    /* ----Experience---- */
+
+    .card {
+        padding: 1rem 0 1rem 0.8rem;
+        background-color: #212529;
+        border:none;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .exp {
+        padding-left: 1.6rem;
+    }
+
+    /* ----Buttons---- */
+    .resume-button-div {
+        text-align: left;
+    }
+    
+    .resume-button {
+        font-size: 1.2rem;
+        margin-bottom: 3%;
+    }
+/* ----------------------End Resume.html--------------- */
+
+/* ---------------------- Projects.html--------------- */
+
+.pro-heading {
+    text-align: left;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding-left: 2.5rem;
+}
+
+div.card > img {
+    border-radius: 2%;
+    max-height: 20rem;
+    max-width: 60%;
+    padding-left: 1rem;
+}
+
+}
+
+/* --------------------------------------Small Laptops---------------------------- */
+
+@media (min-width:1200px) and (max-width:1280px) {
+
+/* ----------------------Index.html--------------- */
+
+    /* ----Footer---- */
+    .social-icon {
+        padding-left: 2.8rem;
+        font-size: 1.8rem;
+        
+    }
+    
+    .copyright {
+        margin-left: 1.9rem;
+        font-size: 0.7rem;
+}
+
+/* ----------------------End Index.html--------------- */
+
+/* ----------------------Resume.html--------------- */
+
+.about-heading {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
+
+.about-list {
+    color:white;
+    margin-bottom: 1.35rem;
+}
+/* ----------------------End Resume.html--------------- */
+
+}

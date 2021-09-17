@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+    {% include 'blog_header.html' %}
+    <style>
+        .x-icon {width: 30%;}
+        #x-space {color: #e04244 !important} 
+        #post-title {font-size: 3rem; text-align: left; text-decoration: underline overline double; color:#e04244}
+        p {padding: 0; text-align: left;}
+        img {width: 100%;}
+        h2 {text-align: left; font-size: 1.5rem; text-decoration: underline;}
+        em, li, blockquote {color:white}
+        h3 p {font-size: 1rem;}
+        p.copyright {text-align: center;}
+        h4 {text-align: center; margin-top: 5rem;}
+        @media (max-width:750px) {
+        #post-title {font-size:2rem;}
+        h2 {font-size:1rem;}
+        h3 p {font-size: 0.7rem;}}
+            
+        
+    </style>
+    <body>
+        <div class="container-fluid col-lg-8 justify-content-center">
+            <div>
+                <h1 id='post-title' class="card-title">{{ post.get('title') }}</h1>
+            </div>
+            <div>
+                <p class="card-text" id='blog-desc' >{{ post.get('html')|safe }}</p>
+            </div>
+        
+
+        <!-- Revue - Subscription -->
+            <div id="revue-embed">
+                <hr>
+            <h4>If you like what you read, please consider subscribing to my newsletter. Thank you!</h4>
+            <form action="https://www.getrevue.co/profile/xSpace/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+            <div class="revue-form-group">
+              <label for="member_email">Email address</label>
+              <input class="revue-form-field" placeholder="Your email address" type="email" name="member[email]" id="member_email">
+            </div>
+            <div class="revue-form-actions">
+              <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+            </div>
+            <div class="revue-form-footer">By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms">Terms of Service</a> and <a target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a>.
+            </div>
+            </form>
+            </div>
+        </div>
+    {% include 'footer.html' %}
+    </body>
+</html>

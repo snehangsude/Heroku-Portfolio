@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+  {% include 'header.html' %}
+  <body>
+    <!-- Contact -->
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center mb-5">
+                <h3 class="contact-heading">{% block title %}Contact Information <i class="fas fa-paper-plane"></i> {% endblock %}</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-md-12">
+                <div class="wrapper">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 mb-5">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="dbox w-100 text-center">
+                                        <div class="icon d-flex align-items-center justify-content-center">
+                                            {% block acontent%}
+                                            <h4><i class="fas fa-map-marker-alt"></i></h4>
+                                        </div>
+                                        <div class="text">
+                                            <p class='contact-p'><u><b>Address:</b></u><br>Siliguri, West Bengal<br>Postal Code: 734003</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="dbox w-100 text-center">
+                                        <div class="icon d-flex align-items-center justify-content-center">
+                                            <h4><i class="fas fa-mobile-alt"></i></h4>
+                                        </div>
+                                        <div class="text">
+                                            <p class='contact-p'><u><b>Phone:</b></u><br>+91-888-679-5859</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="dbox w-100 text-center">
+                                        <div class="icon d-flex align-items-center justify-content-center">
+                                            <h4><i class="fas fa-envelope"></i></h4>
+                                        </div>
+                                        <div class="text">
+                                            <p class='contact-p'><u><b>Email:</b></u><br>desnehangsu@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="contact-wrap">
+                                <h3 class="mb-4 text-center">Get in touch with me <i class="fas fa-phone-rotary"></i></h3>
+                                <p class='contact-p'>If you are looking to hire me or work with me, let's talk!</p>
+                                {% endblock %}
+                                <div id="form-message-warning" class="mb-4 w-100 text-center"></div>
+                                    <div id="form-message-success" class="mb-4 w-100 text-center">
+                                        Your message was sent, thank you!
+                                    </div>
+                                </div>
+
+                                <!-- Insert form here -->
+
+                                {% block content %}
+                                <div class="contact">
+                                    <form action="{{ url_for('contact') }}" method=post>
+                                        <div>
+                                            <p class="contact-form">
+                                                {{ form.name.label }} <br>
+                                                {{ form.name(placeholder='Name') }}
+                                            </p>
+                                            <p class="contact-form">
+                                                {{ form.email.label }} <br>
+                                                {{ form.email(placeholder='Email') }}
+                                            </p>
+                                            <p class="contact-form">
+                                                {{ form.subject.label }}<br>
+                                                {{form.subject(placeholder='Subject')}}
+                                            </p>
+                                            <p class="contact-form">
+                                                {{ form.message.label }}<br>
+                                                {{ form.message(placeholder='Message') }}
+                                            </p>
+                                            <p class="contact-button">
+                                                {{ form.submit }}
+                                            </p>
+                                        </div>
+                                    </form>
+                                </div>
+                                {% endblock %}
+
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  
+      {% include 'footer.html' %}
+  </body>
+</html>

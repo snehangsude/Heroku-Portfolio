@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+  {% include 'header.html' %}
+  <body>
+      <!-- Header -->
+      <div class='col-lg-6 col-xxl-12 col-xl-12'>
+        <h1 class='display-1 intro-name'>Snehangsu De</h1>
+      </div>
+      <div class='col-lg-6 col-xxl-12 col-xl-12'>
+        <h2 class="intro-title">a <span id="js-rotating">Data Analyst, Creator, Blogger</span></h2>
+      </div>
+      <!-- Paragraph -->
+      <div class='intro-define col-lg-8 col-xxl-12 col-xl-12'>
+        <p>
+          My journey to the Tech World started recently. While I speak Python, I do take interest in other languages such as Julia, R and Javascript. 
+          I'm a self-taught developer and googling is a skill I excel in. 
+          <br><br>
+            I love making <u>GUI apps</u>, working with <u>APIs</u> & practice <u>Machine Learning</u>.
+            I'm naturally curious about data and the underlying trends in a dataset. My goal is to make <b>decision making easy</b>.
+            You'll see me writing about what I learn in my blog. <b>Thank you</b> for taking your time to visit!
+        </p>
+        <a href="{{ url_for('resume') }}" type="button" class="btn btn-dark btn-lg index-button"><i class="far fa-file-alt"></i> View Resumé</a>
+      </div>
+      <hr>  
+    {% include 'footer.html' %}
+  </body>
+</html>
