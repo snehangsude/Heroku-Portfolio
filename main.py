@@ -5,20 +5,16 @@ from wtforms.validators import DataRequired
 import smtplib
 import requests
 import os
-import json
 from data import Post
 
 email_id = os.environ.get('EMAIL')
 password = os.environ.get('PASSWORD')
 token = os.environ.get('TOKEN')
-url = os.environ.get('URL')
 
 
 def api():
     headers = {'Authorization': f'Token {token}'}
-    response = (json.loads(json.dumps(requests.get(url='https://www.getrevue.co/api/v2/issues',
-                                                   headers=headers).text.strip('[]')))[:-15]) + "}"
-    response = [eval(response)]
+    response = requests.get(url='https://www.getrevue.co/api/v2/issues', headers=headers).json()
     return response
 
 
