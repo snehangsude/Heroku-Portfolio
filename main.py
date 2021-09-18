@@ -16,7 +16,7 @@ url = os.environ.get('URL')
 
 def api():
     headers = {'Authorization': f'Token {token}'}
-    response = (json.loads(json.dumps(requests.get(url=url, headers=headers).text.strip('[]')))[:-15]) + "}"
+    response = (json.loads(json.dumps(requests.get(url='https://www.getrevue.co/api/v2/issues', headers=headers).text.strip('[]')))[:-15]) + "}"
     response = [eval(response)]
     return response
 
