@@ -10,12 +10,12 @@
                 {% for item in data: %}
                 <div class="card col-lg-6" id="blog-card">
                     <div class="card-body">
-                      <h5 class="card-title">{{ item.get('title') }}</h5>
-                      <p class="card-text" id='blog-desc' >{{ item.get('description')|striptags }}</p>
-                      <p class="card-text"><small class="text-muted">{{ item.get('sent_at').split('T')[0] }}</small></p>
+                      <h5 class="card-title">{{ item['title'] }}</h5>
+                      <p class="card-text" id='blog-desc' >{{ item['description']|striptags }}</p>
+                      <p class="card-text"><small class="text-muted">{{ item['sent_at'].split('T')[0] }}</small></p>
                     </div>
                     <img class='card-image-bottom' alt="Newsletter Image" src="https://s3.amazonaws.com/revue/items/images/011/096/178/original/Anubis-Egyptian-Book-of-the-Dead.jpg?1631635524">
-                    <a href="{{url_for('blogpost', num=item.get('id')) }}" class="btn btn-dark blog-button">Read Post</a>
+                    <a href="{{url_for('blogpost', num=item['id']) }}" class="btn btn-dark blog-button">Read Post</a>
                 </div>
                 {% endfor %}
             </div>
