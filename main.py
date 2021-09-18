@@ -5,11 +5,28 @@ from wtforms.validators import DataRequired
 import smtplib
 import requests
 import os
+import json
+from data import Post
 
 email_id = os.environ.get('EMAIL')
 password = os.environ.get('PASSWORD')
 token = os.environ.get('TOKEN')
 url = os.environ.get('URL')
+
+
+def api():
+    headers = {'Authorization': f'Token {token}'}
+    response = (json.loads(json.dumps(requests.get(url=url, headers=headers).text.strip('[]')))[:-15]) + "}"
+    response = [eval(response)]
+    return response
+
+
+data = api()
+all_posts = []
+for item in data:
+    post = Post(id_=item.get('id'), title=item.get('title'), description=item.get('description'),
+                sent_at=item.get('sent_at'), html=item.get('html'))
+    all_posts.append(post)
 
 app = Flask(__name__)
 
@@ -22,10 +39,6 @@ class ContactForm(FlaskForm):
     subject = StringField('Which subject are you referring to?', validators=[DataRequired()])
     message = TextAreaField('What can I help you with?', validators=[DataRequired()])
     submit = SubmitField('Send Message')
-
-
-headers = {'Authorization': f'Token {token}'}
-data = requests.get(url='https://www.getrevue.co/api/v2/issues', headers=headers).json()
 
 
 @app.route("/")
@@ -45,15 +58,15 @@ def project():
 
 @app.route("/blog")
 def blog():
-    return render_template('blog.html', data=data)
+    return render_template('blog.html', data=all_posts)
 
 
 @app.route("/blogpost/<int:num>")
 def blogpost(num):
     requested_post = None
-    for item in data:
-        if num == item.get('id'):
-            requested_post = item
+    for article in all_posts:
+        if num == post.id:
+            requested_post = article
     return render_template('post.html', post=requested_post)
 
 
