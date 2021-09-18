@@ -22,10 +22,10 @@
     <body>
         <div class="container-fluid col-lg-8 justify-content-center">
             <div>
-                <h1 id='post-title' class="card-title">{{ post.get('title') }}</h1>
+                <h1 id='post-title' class="card-title">{{ post.title }}</h1>
             </div>
             <div>
-                <p class="card-text" id='blog-desc' >{{ post.get('html')|safe }}</p>
+                <p class="card-text" id='blog-desc' >{{ post.html|safe }}</p>
             </div>
         
 
