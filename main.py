@@ -80,7 +80,8 @@ def contact():
         subject = request.form['subject']
         message = request.form['message']
         send_email(name=name, email=email, subject=subject, message=message)
-    return render_template('contact.html', form=form)
+        return render_template('contact.html', form=form, msg=True)
+    return render_template('contact.html', form=form, msg=False)
 
 
 def send_email(name, email, subject, message):
