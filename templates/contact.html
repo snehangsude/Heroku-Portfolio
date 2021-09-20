@@ -19,7 +19,7 @@
                                 <div class="col-md-4">
                                     <div class="dbox w-100 text-center">
                                         <div class="icon d-flex align-items-center justify-content-center">
-                                          
+
                                             <h4><i class="fas fa-map-marker-alt"></i></h4>
                                         </div>
                                         <div class="text">
@@ -51,14 +51,14 @@
                         </div>
                         <div class="col-lg-8">
                             <div class="contact-wrap">
-                                <h3 class="mb-4 text-center">Get in touch with me <i class="fas fa-phone-rotary"></i></h3>
+                                {% if not msg: %}
+                                <h3 class="mb-4 text-center">Get in touch with me</h3>
+                                {% else: %}
+                                <h3 class="mb-4 text-center">Message sent successfully. Thank you!</h3>
+                                {% endif %}
                                 <p class='contact-p'>If you are looking to hire me or work with me, let's talk!</p>
 
-                                <div id="form-message-warning" class="mb-4 w-100 text-center"></div>
-                                    <div id="form-message-success" class="mb-4 w-100 text-center">
-                                        Your message was sent, thank you!
-                                    </div>
-                                </div>
+
 
                                 <!-- Insert form here -->
 
