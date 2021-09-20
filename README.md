@@ -18,3 +18,7 @@ The list of all the technologies and the libraries are listed below. You can <a 
 * SMTPLIB
 * JSON
 * OS
+
+  
+#### Updates planned
+* Integrate GitHub API for repos 
