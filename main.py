@@ -16,8 +16,9 @@ url = os.environ.get('URL')
 
 def api():
     headers = {'Authorization': f'Token {token}'}
-    response = (json.loads(json.dumps(requests.get(url=url, headers=headers).text.strip('[]')))[:-15]) + "}"
-    response = [eval(response)]
+    response = requests.get(url=url, headers=headers).json()
+#     response = (json.loads(json.dumps(requests.get(url=url, headers=headers).text.strip('[]')))[:-15]) + "}"
+#     response = [eval(response)]
     return response
 
 data = api()
