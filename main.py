@@ -71,7 +71,7 @@ def blog():
 def blogpost(num):
     requested_post = None
     for article in all_posts:
-        if num == post.id:
+        if num == article.id:
             requested_post = article
     return render_template('post.html', post=requested_post)
 
