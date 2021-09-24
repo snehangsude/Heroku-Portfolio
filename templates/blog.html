@@ -14,7 +14,7 @@
                       <p class="card-text" id='blog-desc' >{{ item['description']|striptags }}</p>
                       <p class="card-text"><small class="text-muted">{{ item['sent_at'].split('T')[0] }}</small></p>
                     </div>
-                    <img class='card-image-bottom' alt="Newsletter Image" src="https://s3.amazonaws.com/revue/items/images/011/096/178/original/Anubis-Egyptian-Book-of-the-Dead.jpg?1631635524">
+                    <img class='card-image-bottom' alt="Newsletter Image" src="static/images/Expected Space.PNG">
                     <a href="{{url_for('blogpost', num=item['id']) }}" class="btn btn-dark blog-button">Read Post</a>
                 </div>
                 {% endfor %}
