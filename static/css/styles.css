@@ -178,7 +178,7 @@ input#member_submit:hover {        /*Blog.html*/
 
 /* ---- Lines ---- */
 hr {
-    border-style: dotted none none;
+    border-style: double none none;
     width:15%;
     border-color:#3196a4;
     border-width: 7px;
@@ -416,6 +416,8 @@ p.tags {
     padding: 1rem 0;
     text-align: left;
 }
+
+label {padding-left: 0.8rem;}
 
 /* ---------------------- End Contact.html--------------- */
 
