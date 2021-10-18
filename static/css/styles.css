@@ -1,11 +1,16 @@
 /* ----------------------------------------------HTML Tags-------------------------------------------------- */
 
+:root {
+    cursor: url("../images/cursor.png"), auto;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Sacramento', cursive;
     font-family: 'Andika', sans-serif;
     font-family: 'Ubuntu', sans-serif;
     background-color: #212529;
+    height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -49,6 +54,9 @@ p {
     margin-right: 2%;
 }
 
+a {
+    cursor: url("../images/link.png"), pointer;
+}
 
 /*Contact.html*/
 input {
@@ -80,7 +88,8 @@ input#submit {          /*Contact.html*/
 
 input#submit:hover {        /*Contact.html*/
     background-position:0 0;
-    color: #132434
+    color: #132434;
+    cursor: url("../images/link.png"), pointer;
 }
 
 input#member_email { /*Blog.html*/
@@ -120,7 +129,8 @@ input#member_submit { /*Blog.html*/
 
 input#member_submit:hover {        /*Blog.html*/
     background-position:0 0;
-    color: #132434
+    color: #132434;
+    cursor: url("../images/link.png"), pointer;
 }
 
 /* ---------------------------------------------------- Classes -----------------------------------------------*/
@@ -199,7 +209,8 @@ hr {
 
 .index-button:hover {
     background-position:0 0;
-    color: #132434
+    color: #132434;
+    cursor: url("../images/link.png"), pointer;
 }
 
 /* ---- Footer ---- */
@@ -356,7 +367,8 @@ p.card-text {
 
 .resume-button:hover {
     background-position:0 0;
-    color: #132434
+    color: #132434;
+    cursor: url("../images/link.png"), pointer;
 }
 /* ----------------------End Resume.html--------------- */
 
@@ -393,7 +405,8 @@ p.tags {
 
 .proj-button:hover {
     background-position:0 0;
-    color: #132434
+    color: #132434;
+    cursor: url("../images/link.png"), pointer;
 }
 
 .pro-button {
@@ -451,7 +464,8 @@ p.blog-desc {
 
 .blog-button:hover {
     background-position:0 0;
-    color: #132434
+    color: #132434;
+    cursor: url("../images/link.png"), pointer;
 }
 
 /* ---------------------- End Blog.html--------------- */
