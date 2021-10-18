@@ -181,7 +181,7 @@ input#member_submit:hover {        /*Blog.html*/
 
 .nav-link:hover {
     color:#54d3d8 !important;
-    transform: rotateZ(-15deg);
+    transform: scale(1.2);
     transition: transform 0.15s ease-in-out;
     transition-delay: 0.20s;
 }
