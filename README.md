@@ -1,3 +1,10 @@
+
+![GitHub repo size](https://img.shields.io/github/repo-size/snehangsude/Heroku-Portfolio)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/snehangsude/Heroku-Portfolio)
+![Lines of code](https://img.shields.io/tokei/lines/github/snehangsude/Heroku-Portfolio)
+![GitHub followers](https://img.shields.io/github/followers/snehangsude?style=social)
+![Twitter Follow](https://img.shields.io/twitter/follow/__xSpace?style=social)
+
 # Heroku-Portfolio
 
 ## A Portfolio website hosted in <b>Heroku</b> using <b>Flask<b/> as a Backend application and the <b>Revue API</b> to integrate data. 
